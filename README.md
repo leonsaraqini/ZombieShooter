@@ -47,3 +47,110 @@ zombiesList: List of zombies in the game. <br />
 
 # Methods
 
+```
+private void MainTimerEvent(object sender, EventArgs e)
+{
+    if (playerHealth > 1)
+    {
+        healthBar.Value = playerHealth;
+    }
+    else
+    {
+        gameOver = true;
+        player.Image = Properties.Resources.dead;
+        GameTimer.Stop();
+
+        DialogResult result = MessageBox.Show($"Game over!\nYour Score: {score}\nDo you want to play a new game?", "Game Over", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+        if (result == DialogResult.No)
+        {
+            Application.Exit();
+        }
+        else
+        {
+            RestartGame();
+        }
+    }
+
+    txtAmmo.Text = "Ammo: " + ammo;
+    txtScore.Text = "Kills: " + score;
+
+    if (goLeft == true && player.Left > 0)
+    {
+        player.Left -= speed;
+    }
+    if (goRight == true && player.Left + player.Width < this.ClientSize.Width)
+    {
+        player.Left += speed;
+    }
+    if (goUp == true && player.Top > 45)
+    {
+        player.Top -= speed;
+    }
+    if (goDown == true && player.Top + player.Height < this.ClientSize.Height)
+    {
+        player.Top += speed;
+    }
+
+    foreach (Control x in this.Controls)
+    {
+        if (x is PictureBox && (string)x.Tag == "ammo")
+        {
+            if (player.Bounds.IntersectsWith(x.Bounds))
+            {
+                this.Controls.Remove(x);
+                ((PictureBox)x).Dispose();
+                ammo += 5;
+            }
+        }
+
+        if (x is PictureBox && (string)x.Tag == "zombie")
+        {
+            if (player.Bounds.IntersectsWith(x.Bounds))
+            {
+                playerHealth -= 1;
+            }
+
+            if (x.Left > player.Left)
+            {
+                x.Left -= zombieSpeed;
+                ((PictureBox)x).Image = Properties.Resources.zleft;
+            }
+            if (x.Left < player.Left)
+            {
+                x.Left += zombieSpeed;
+                ((PictureBox)x).Image = Properties.Resources.zright;
+            }
+            if (x.Top > player.Top)
+            {
+                x.Top -= zombieSpeed;
+                ((PictureBox)x).Image = Properties.Resources.zup;
+            }
+            if (x.Top < player.Top)
+            {
+                x.Top += zombieSpeed;
+                ((PictureBox)x).Image = Properties.Resources.zdown;
+            }
+        }
+
+        foreach (Control j in this.Controls)
+        {
+            if (j is PictureBox && (string)j.Tag == "bullet" && x is PictureBox && (string)x.Tag == "zombie")
+            {
+                if (x.Bounds.IntersectsWith(j.Bounds))
+                {
+                    score++;
+
+                    this.Controls.Remove(j);
+                    ((PictureBox)j).Dispose();
+                    this.Controls.Remove(x);
+                    ((PictureBox)x).Dispose();
+                    zombiesList.Remove(((PictureBox)x));
+                    MakeZombies();
+                }
+            }
+        }
+    }
+}
+```     
+
