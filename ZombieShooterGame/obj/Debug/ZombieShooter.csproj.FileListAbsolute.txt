@@ -1,0 +1,30 @@
+C:\Users\Leon\Source\Repos\Top-Down-Zombie-Shooter-Game-in-Windows-Form\Shoot Out Game MOO ICT\obj\Debug\ZombieShooter.csproj.AssemblyReference.cache
+C:\Users\Leon\Source\Repos\Top-Down-Zombie-Shooter-Game-in-Windows-Form\Shoot Out Game MOO ICT\obj\Debug\ZombieShooter.csproj.GenerateResource.cache
+C:\Users\Leon\Source\Repos\Top-Down-Zombie-Shooter-Game-in-Windows-Form\Shoot Out Game MOO ICT\obj\Debug\ZombieShooter.csproj.CoreCompileInputs.cache
+C:\Users\Leon\source\repos\Top-Down-Zombie-Shooter-Game-in-Windows-Form\Shoot Out Game MOO ICT\bin\Debug\ZombieShooter.exe.config
+C:\Users\Leon\source\repos\Top-Down-Zombie-Shooter-Game-in-Windows-Form\Shoot Out Game MOO ICT\bin\Debug\ZombieShooter.exe
+C:\Users\Leon\source\repos\Top-Down-Zombie-Shooter-Game-in-Windows-Form\Shoot Out Game MOO ICT\bin\Debug\ZombieShooter.pdb
+C:\Users\Leon\source\repos\Top-Down-Zombie-Shooter-Game-in-Windows-Form\Shoot Out Game MOO ICT\obj\Debug\ZombieShooter.Form1.resources
+C:\Users\Leon\source\repos\Top-Down-Zombie-Shooter-Game-in-Windows-Form\Shoot Out Game MOO ICT\obj\Debug\ZombieShooter.Properties.Resources.resources
+C:\Users\Leon\source\repos\Top-Down-Zombie-Shooter-Game-in-Windows-Form\Shoot Out Game MOO ICT\obj\Debug\ZombieShooter.exe
+C:\Users\Leon\source\repos\Top-Down-Zombie-Shooter-Game-in-Windows-Form\Shoot Out Game MOO ICT\obj\Debug\ZombieShooter.pdb
+C:\GitHubDesktopSrc\ZombieShooter\Shoot Out Game MOO ICT\bin\Debug\ZombieShooter.exe.config
+C:\GitHubDesktopSrc\ZombieShooter\Shoot Out Game MOO ICT\bin\Debug\ZombieShooter.exe
+C:\GitHubDesktopSrc\ZombieShooter\Shoot Out Game MOO ICT\bin\Debug\ZombieShooter.pdb
+C:\GitHubDesktopSrc\ZombieShooter\Shoot Out Game MOO ICT\obj\Debug\ZombieShooter.csproj.AssemblyReference.cache
+C:\GitHubDesktopSrc\ZombieShooter\Shoot Out Game MOO ICT\obj\Debug\ZombieShooter.Form1.resources
+C:\GitHubDesktopSrc\ZombieShooter\Shoot Out Game MOO ICT\obj\Debug\ZombieShooter.Properties.Resources.resources
+C:\GitHubDesktopSrc\ZombieShooter\Shoot Out Game MOO ICT\obj\Debug\ZombieShooter.csproj.GenerateResource.cache
+C:\GitHubDesktopSrc\ZombieShooter\Shoot Out Game MOO ICT\obj\Debug\ZombieShooter.csproj.CoreCompileInputs.cache
+C:\GitHubDesktopSrc\ZombieShooter\Shoot Out Game MOO ICT\obj\Debug\ZombieShooter.exe
+C:\GitHubDesktopSrc\ZombieShooter\Shoot Out Game MOO ICT\obj\Debug\ZombieShooter.pdb
+C:\GitHubDesktopSrc\ZombieShooter\ZombieShooterGame\bin\Debug\ZombieShooter.exe.config
+C:\GitHubDesktopSrc\ZombieShooter\ZombieShooterGame\bin\Debug\ZombieShooter.exe
+C:\GitHubDesktopSrc\ZombieShooter\ZombieShooterGame\bin\Debug\ZombieShooter.pdb
+C:\GitHubDesktopSrc\ZombieShooter\ZombieShooterGame\obj\Debug\ZombieShooter.csproj.AssemblyReference.cache
+C:\GitHubDesktopSrc\ZombieShooter\ZombieShooterGame\obj\Debug\ZombieShooter.Form1.resources
+C:\GitHubDesktopSrc\ZombieShooter\ZombieShooterGame\obj\Debug\ZombieShooter.Properties.Resources.resources
+C:\GitHubDesktopSrc\ZombieShooter\ZombieShooterGame\obj\Debug\ZombieShooter.csproj.GenerateResource.cache
+C:\GitHubDesktopSrc\ZombieShooter\ZombieShooterGame\obj\Debug\ZombieShooter.csproj.CoreCompileInputs.cache
+C:\GitHubDesktopSrc\ZombieShooter\ZombieShooterGame\obj\Debug\ZombieShooter.exe
+C:\GitHubDesktopSrc\ZombieShooter\ZombieShooterGame\obj\Debug\ZombieShooter.pdb
