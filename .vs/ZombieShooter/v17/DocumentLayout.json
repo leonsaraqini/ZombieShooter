@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\GitHubDesktopSrc\\ZombieShooter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{851EAB91-8F66-4E83-8415-45D4515B4BE7}|Shoot Out Game MOO ICT\\ZombieShooter.csproj|c:\\githubdesktopsrc\\zombieshooter\\shoot out game moo ict\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{851EAB91-8F66-4E83-8415-45D4515B4BE7}|Shoot Out Game MOO ICT\\ZombieShooter.csproj|solutionrelative:shoot out game moo ict\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\githubdesktopsrc\\zombieshooter\\shoot out game moo ict\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:shoot out game moo ict\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851EAB91-8F66-4E83-8415-45D4515B4BE7}|Shoot Out Game MOO ICT\\ZombieShooter.csproj|c:\\githubdesktopsrc\\zombieshooter\\shoot out game moo ict\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{851EAB91-8F66-4E83-8415-45D4515B4BE7}|Shoot Out Game MOO ICT\\ZombieShooter.csproj|solutionrelative:shoot out game moo ict\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\githubdesktopsrc\\zombieshooter\\shoot out game moo ict\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:shoot out game moo ict\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851EAB91-8F66-4E83-8415-45D4515B4BE7}|Shoot Out Game MOO ICT\\ZombieShooter.csproj|c:\\githubdesktopsrc\\zombieshooter\\shoot out game moo ict\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{851EAB91-8F66-4E83-8415-45D4515B4BE7}|Shoot Out Game MOO ICT\\ZombieShooter.csproj|solutionrelative:shoot out game moo ict\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\githubdesktopsrc\\zombieshooter\\shoot out game moo ict\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:shoot out game moo ict\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -63,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\GitHubDesktopSrc\\ZombieShooter\\Shoot Out Game MOO ICT\\Bullet.cs",
               "RelativeDocumentMoniker": "Shoot Out Game MOO ICT\\Bullet.cs",
@@ -71,20 +71,18 @@
               "RelativeToolTip": "Shoot Out Game MOO ICT\\Bullet.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T19:03:38.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T19:03:38.93Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\GitHubDesktopSrc\\ZombieShooter\\Shoot Out Game MOO ICT\\Form1.cs",
               "RelativeDocumentMoniker": "Shoot Out Game MOO ICT\\Form1.cs",
               "ToolTip": "C:\\GitHubDesktopSrc\\ZombieShooter\\Shoot Out Game MOO ICT\\Form1.cs [Design]",
               "RelativeToolTip": "Shoot Out Game MOO ICT\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T19:03:22.661Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-07T19:03:22.661Z"
             }
           ]
         }
