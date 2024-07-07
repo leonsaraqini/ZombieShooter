@@ -19,6 +19,7 @@ namespace ZombieShooter
         int speed = 10;
         int ammo = 10;
         int zombieSpeed = 3;
+        int kills = 0;
         Random randNum = new Random();
         int score;
         List<PictureBox> zombiesList = new List<PictureBox>();
