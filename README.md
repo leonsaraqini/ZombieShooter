@@ -47,6 +47,9 @@ zombiesList: List of zombies in the game. <br />
 
 # Methods
 
+MainTimerEvent <br />
+Handles the main game loop, including player movement, zombie movement, collision detection, health updates, score updates, and game over condition.<br />
+
 ```
 private void MainTimerEvent(object sender, EventArgs e)
 {
@@ -152,5 +155,173 @@ private void MainTimerEvent(object sender, EventArgs e)
         }
     }
 }
-```     
+```
+
+KeyIsDown<br />
+Handles player movement input by setting direction flags and changing the player's image based on the direction.<br />
+```
+private void KeyIsDown(object sender, KeyEventArgs e)
+{
+    if (gameOver == true)
+    {
+        return;
+    }
+
+    if (e.KeyCode == Keys.Left)
+    {
+        goLeft = true;
+        facing = "left";
+        player.Image = Properties.Resources.left;
+    }
+
+    if (e.KeyCode == Keys.Right)
+    {
+        goRight = true;
+        facing = "right";
+        player.Image = Properties.Resources.right;
+    }
+
+    if (e.KeyCode == Keys.Up)
+    {
+        goUp = true;
+        facing = "up";
+        player.Image = Properties.Resources.up;
+    }
+
+    if (e.KeyCode == Keys.Down)
+    {
+        goDown = true;
+        facing = "down";
+        player.Image = Properties.Resources.down;
+    }
+}
+```
+KeyIsUp<br />
+Handles player movement input and shooting bullets. Also listens for the Enter key to restart the game after a game over.<br />
+```
+private void KeyIsUp(object sender, KeyEventArgs e)
+{
+    if (e.KeyCode == Keys.Left)
+    {
+        goLeft = false;
+    }
+
+    if (e.KeyCode == Keys.Right)
+    {
+        goRight = false;
+    }
+
+    if (e.KeyCode == Keys.Up)
+    {
+        goUp = false;
+    }
+
+    if (e.KeyCode == Keys.Down)
+    {
+        goDown = false;
+    }
+
+    if (e.KeyCode == Keys.Space && ammo > 0 && gameOver == false)
+    {
+        ammo--;
+        ShootBullet(facing);
+
+        if (ammo < 1)
+        {
+            DropAmmo();
+        }
+    }
+
+    if (e.KeyCode == Keys.Enter && gameOver == true)
+    {
+        RestartGame();
+    }
+}
+```
+
+ShootBullet<br />
+Creates and shoots a bullet in the specified direction.<br />
+```
+private void ShootBullet(string direction)
+{
+    Bullet shootBullet = new Bullet();
+    shootBullet.direction = direction;
+    shootBullet.bulletLeft = player.Left + (player.Width / 2);
+    shootBullet.bulletTop = player.Top + (player.Height / 2);
+    shootBullet.MakeBullet(this);
+}
+```
+
+MakeZombies<br />
+Creates a new zombie at a random location and adds it to the game.<br />
+
+```
+private void MakeZombies()
+{
+    PictureBox zombie = new PictureBox();
+    zombie.Tag = "zombie";
+    zombie.Image = Properties.Resources.zdown;
+    zombie.Left = randNum.Next(0, 900);
+    zombie.Top = randNum.Next(0, 800);
+    zombie.SizeMode = PictureBoxSizeMode.AutoSize;
+    zombiesList.Add(zombie);
+    this.Controls.Add(zombie);
+    player.BringToFront();
+}
+```
+DropAmmo<br />
+Drops ammo at a random location in the game.<br />
+
+```
+private void DropAmmo()
+{
+    PictureBox ammo = new PictureBox();
+    ammo.Image = Properties.Resources.ammo_Image;
+    ammo.SizeMode = PictureBoxSizeMode.AutoSize;
+    ammo.Left = randNum.Next(10, this.ClientSize.Width - ammo.Width);
+    ammo.Top = randNum.Next(60, this.ClientSize.Height - ammo.Height);
+    ammo.Tag = "ammo";
+    this.Controls.Add(ammo);
+
+    ammo.BringToFront();
+    player.BringToFront();
+}
+```
+RestartGame<br />
+Restarts the game by resetting player health, score, ammo, and spawning new zombies.<br />
+```
+private void RestartGame()
+{
+    player.Image = Properties.Resources.up;
+
+    foreach (PictureBox i in zombiesList)
+    {
+        this.Controls.Remove(i);
+    }
+
+    zombiesList.Clear();
+
+    for (int i = 0; i < 3; i++)
+    {
+        MakeZombies();
+    }
+
+    goUp = false;
+    goDown = false;
+    goLeft = false;
+    goRight = false;
+    gameOver = false;
+
+    playerHealth = 100;
+    score = 0;
+    ammo = 10;
+
+    GameTimer.Start();
+}
+```
+# Team Members
+- Leon Saraqini (211508)
+- Ariton Spahiu ()
+
+
 
