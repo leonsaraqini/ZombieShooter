@@ -10,40 +10,40 @@ Upon starting the game, the player is introduced to the main gameplay screen wit
 
 # Controls
 
-Left Arrow: Move left
-Right Arrow: Move right
-Up Arrow: Move up
-Down Arrow: Move down
-Spacebar: Shoot
-Ok Button: Restart game after game over
+Left Arrow: Move left <br />
+Right Arrow: Move right <br />
+Up Arrow: Move up <br />
+Down Arrow: Move down <br />
+Spacebar: Shoot <br />
+Ok Button: Restart game after game over <br />
 
 # Rules
-You have 100 health points. Health decreases by 1 each time a zombie touches the player.
-Zombies move towards the player and attack.
-Ammo is limited but can be replenished by picking up ammo boxes scattered around the map.
-The game ends when the player's health reaches zero.
-The objective is to kill as many zombies as possible. Each kill adds to your score.
+You have 100 health points. Health decreases by 1 each time a zombie touches the player. <br />
+Zombies move towards the player and attack. <br />
+Ammo is limited but can be replenished by picking up ammo boxes scattered around the map. <br />
+The game ends when the player's health reaches zero. <br />
+The objective is to kill as many zombies as possible. Each kill adds to your score. <br />
 
-The game does not use constants explicitly, but key properties include:
+The game does not use constants explicitly, but key properties include: <br />
 
-Form size and dimensions.
-Player's speed and health.
-Zombie's speed.
-Ammo count.
-Timer interval for game updates.
+Form size and dimensions. <br /> 
+Player's speed and health. <br />
+Zombie's speed. <br />
+Ammo count. <br />
+Timer interval for game updates. <br />
 
 # Fields
 
-goLeft, goRight, goUp, goDown: Flags for player movement.
-gameOver: Flag to indicate if the game is over.
-facing: Direction the player is facing.
-playerHealth: Health of the player.
-speed: Movement speed of the player.
-ammo: Ammunition count.
-zombieSpeed: Movement speed of the zombies.
-randNum: Instance of Random for generating random numbers.
-score: Player's score (number of zombies killed).
-zombiesList: List of zombies in the game.
+goLeft, goRight, goUp, goDown: Flags for player movement. <br />
+gameOver: Flag to indicate if the game is over. <br />
+facing: Direction the player is facing. <br />
+playerHealth: Health of the player. <br />
+speed: Movement speed of the player. <br />
+ammo: Ammunition count. <br />
+zombieSpeed: Movement speed of the zombies. <br />
+randNum: Instance of Random for generating random numbers. <br />
+score: Player's score (number of zombies killed). <br />
+zombiesList: List of zombies in the game. <br />
 
 # Methods
 
